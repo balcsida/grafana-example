@@ -7,6 +7,9 @@
   "healthCheck": {
     "url": "localhost:3000"
   },
+  "env": {
+    "GF_INSTALL_PLUGINS": "grafana-clock-panel,grafana-simple-json-datasource,grafana-piechart-panel"
+  },
   "volumes": {
     "storage": "/var/lib/grafana"
   }
